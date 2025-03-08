@@ -1,42 +1,64 @@
-'use client'; 
-import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+import { once } from "events";
+import { FaGithub, FaEnvelope, FaLinkedin, FaFilePdf } from "react-icons/fa6";
+import { League_Spartan } from "next/font/google";
+
+const league_spartan = League_Spartan({
+  weight: ["400", "700"], // Choose font weights
+  subsets: ["latin"], // Choose the font subsets
+});
 
 const Main = () => {
-    return (
-        <div className='w-full h-screen text-center'>
-            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-                <div>
-                    <p className='uppercase text-sm tracking-widest text-gray-600'>
-                        LETS BUILD SOMETHING TOGETHER
-                    </p>
-                    <h1 className='py-4 text-gray-700'> 
-                        Hi, I'm <span className='text-blue-500'>Issar</span>
-                    </h1>
-                    <h1 className='py-2 text-gray-700'>Full Stack Engineer</h1>
-                    <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                        Currently interested in web dev, AI, and machine learning. 
-                    </p>
-                    <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedin size={22}/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub size={22}/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineMail size={22}/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <BsFillPersonLinesFill size={22}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
+      <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
+        <h1 className="text-white max-w-2xl mb-7 lg:text-6xl text-4xl">
+          <span className={`${league_spartan.className} text-transparent text-6xl bg-clip-text text-white`}>
+            <TypeAnimation
+              sequence={[
+                "Hi, I'm Issar Manknojiya", 
+                1000,
+              ]}
+              speed={20} 
+              wrapper="span"
+              repeat={0} 
+            />
+          </span>
+        </h1>
+        <p className={`${league_spartan.className} text-[#ADB7BE] mb-6 text-lg lg:text-xl`}>
+          19 year old AI & Product Engineer, studying Software Engineering at Western University.
+        </p>
+        <div className='mt-2'>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+            <FaFilePdf className="w-5 h-8" />
+          </button>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+            <FaGithub className="w-5 h-8" />
+          </button>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+            <FaLinkedin className="w-5 h-8" />
+          </button>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+            <FaEnvelope className="w-5 h-8" />
+          </button>
         </div>
-    ); 
-}
+      </div>
+      <div className="hidden lg:block col-span-5 place-self-right mt-4 lg:mt-0 lg:w-full">
+        <div className="bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative left-20 shadow-xl shadow-gray-400">
+          <Image
+            src="/assets/profilepic.jpg"
+            alt="Profile Picture"
+            layout="fill" // Ensures the image fills the container
+            objectFit="cover" // Crops the image to fit
+            className="rounded-full"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Main;
