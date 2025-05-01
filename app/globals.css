@@ -1,0 +1,13 @@
+/* Add these lines at the top of your globals.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply text-white tracking-wide; 
+  }
+
+}
