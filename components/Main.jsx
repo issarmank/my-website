@@ -29,7 +29,7 @@ const Main = () => {
           </span>
         </h1>
         <p className={`${league_spartan.className} text-[#ADB7BE] mb-6 text-lg lg:text-xl`}>
-          19 year old AI & Product Engineer, studying Software Engineering at Western University.
+          19 year old Product & Frontend Engineer, studying Software Engineering at Western University.
         </p>
         <div className='mt-2'>
           <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
