@@ -16,7 +16,7 @@ const Main = () => {
     <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-7 lg:text-6xl text-4xl">
-          <span className={`${league_spartan.className} font-semi-bold text-4xl bg-clip-text text-[#121456]`}>
+          <span className={`${league_spartan.className} font-semi-bold text-4xl bg-clip-text bg-gray-100 text-[#121456] dark:bg-[#121456] dark:text-gray-100`}>
             <TypeAnimation
               sequence={[
                 "Hi, I'm Issar Manknojiya", 
@@ -28,7 +28,7 @@ const Main = () => {
             />
           </span>
         </h1>
-        <p className={`${league_spartan.className} text-[#121456] mb-6 text-lg lg:text-xl`}>
+        <p className={`${league_spartan.className} text-[#121456] mb-6 text-lg lg:text-xl bg-gray-100 text-[#121456] dark:bg-[#121456] dark:text-gray-100`}>
           Engineer based in Austin, Texas building at the intersection of Product Engineering and AI. Studying Software Engineering at the University of Western Ontario.
         </p>
         <div className='mt-2'>
