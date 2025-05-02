@@ -11,12 +11,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-95 backdrop-blur-sm">
       <div className="container mx-auto px-12">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo/Name */}
-          <Link href="/" className={`${league_spartan.className} text-2xl text-white hover:text-blue-400 transition-colors`}>
-            Issar Manknojiya
-          </Link>
-
+        <div className="flex justify-center items-center h-20">
           {/* Navigation Links */}
           <div className="flex space-x-12">
             <Link href="#about" className={`${league_spartan.className} text-gray-300 hover:text-white transition-colors`}>
