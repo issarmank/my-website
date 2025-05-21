@@ -28,20 +28,23 @@ const Main = () => {
             />
           </span>
         </h1>
-        <p className={`${league_spartan.className} text-[#121456] mb-6 text-lg lg:text-xl bg-gray-100 text-[#121456] dark:bg-[#121456] dark:text-gray-100`}>
-          Engineer based in Austin, Texas building at the intersection of Product Engineering and AI. Studying Software Engineering at the University of Western Ontario.
+        <p className={`${league_spartan.className} text-[#121456] text-lg lg:text-xl bg-gray-100 text-[#121456] dark:bg-[#121456] dark:text-gray-100 font-bold`}>
+          Austin, Texas
+        </p>
+        <p className={`${league_spartan.className} text-[#121456] mb-6 text-lg lg:text-xl bg-gray-100 text-[#121456] dark:bg-[#121456] dark:text-gray-100 font-bold`}>
+        Software Engineering @ Western University
         </p>
         <div className='mt-2'>
-          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6 dark:border border-gray-100'>
             <FaFilePdf className="w-5 h-8" />
           </button>
-          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6 dark:border border-gray-100'>
             <FaGithub className="w-5 h-8" />
           </button>
-          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6 dark:border border-gray-100'>
             <FaLinkedin className="w-5 h-8" />
           </button>
-          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6'>
+          <button className='bg-[#121456] hover:bg-slate-500 text-white px-5 py-2 rounded-full mr-6 dark:border border-gray-100'>
             <FaEnvelope className="w-5 h-8" />
           </button>
         </div>
