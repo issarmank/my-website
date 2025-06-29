@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -14,9 +14,28 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
+}
+
+/* Default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
 }
 
 body {
