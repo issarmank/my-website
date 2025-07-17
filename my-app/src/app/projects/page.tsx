@@ -4,22 +4,22 @@ const projects = [
   {
     title: "Ai Powered Pull Request Review",
     subtitle: "Connecting musicians with technology",
-    image: "/images/prdevtool.jpg", // update with your actual path
+    image: "", // update with your actual path
   },
   {
     title: "Politicate",
     subtitle: "Personalized AI-powered political education platform",
-    image: "/images/politicate.jpg",
+    image: "",
   },
   {
     title: "steersafe",
     subtitle: "Gamified mobile app that incentivizes distraction-free driving",
-    image: "/images/steersafe.jpg",
+    image: "",
   },
   {
     title: "Dream Team",
     subtitle: "Team matchmaking driven by machine learning",
-    image: "/images/dreamteam.jpg",
+    image: "",
   },
 ];
 
